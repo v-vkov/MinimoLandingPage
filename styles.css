@@ -1,0 +1,284 @@
+body {
+    max-width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.p-3,
+.py-3,
+.pt-3 {
+    padding-top: 1rem;
+}
+
+.p-3,
+.px-3,
+.pr-3 {
+    padding-right: 1rem;
+}
+
+.p-3,
+.py-3,
+.pb-3 {
+    padding-bottom: 1rem;
+}
+
+.p-3,
+.px-3,
+.pl-3 {
+    padding-left: 1rem;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+
+header {
+    width: 100%;
+    align-items: center;
+} 
+
+.logo {
+    font-size: 30px;
+    font-family: "Inconsolata";
+    letter-spacing: 6px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 20px;
+}
+  
+.burger {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+    /* display: none; */
+    
+}
+
+.burger::after,
+.burger::before,
+.burger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background: black;
+}
+
+.burger::after,
+.burger::before {
+    content: "";
+}
+
+.burger::before {
+    top: 0;
+}
+
+.burger span { 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.burger::after {
+    bottom: 0;    
+}
+
+.navbar, .footNav {
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    text-align: center;
+    color: rgb(98, 98, 98);
+    font-size: 1rem;
+    align-items: flex-end;
+    margin-left: 60px;
+    text-transform: uppercase;
+    font-family: "PlayfairDisplay";
+}
+
+a:hover {
+    color: brown;
+}
+
+.textNav {
+    text-decoration: none;
+    text-align: center;
+    color: rgb(98, 98, 98);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: "PlayfairDisplay";
+}
+
+.container {
+    flex-wrap: wrap;
+    justify-content: center;
+    color: rgb(98, 98, 98);
+    
+}
+.firstPost {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.firstPost img, 
+.content img {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.content{
+    width: 45%;
+}
+  
+.signUp {
+    background: rgb(240, 240, 240);
+    height: 250px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
+form {
+    width: 40%;
+    height: 40px;
+    
+}
+
+.emailInput {
+    width: 100%;
+    background: rgb(240, 240, 240);
+    border: none;
+    overflow: hidden;
+    border-bottom: 1px solid black;
+    font-size: 1rem;
+    font-family: "Incocsolata";
+
+}
+
+.sendInput {
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgb(240, 240, 240);
+    border-bottom: 1px solid black;
+
+} 
+
+.emailInput:active, 
+.emailInput:hover, 
+.emailInput:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.sendInput:active, 
+.sendInput:hover, 
+.sendInput:focus {
+    outline: 0;
+    outline-offset: 0;
+
+}
+
+.buttonSpace {
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+
+}
+.btn {
+    width: 140px;
+    height: 50px;
+    border: 1px solid rgb(98, 98, 98);
+    text-decoration: none;
+    text-align: center;  
+    font-size: 1.2rem;
+    font-family: "PlayfairDisplay";
+    color: rgb(98, 98, 98);
+    box-sizing: border-box;
+    padding-top: 12px;
+    
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background: rgb(240, 240, 240);
+
+}
+
+.footNav a {
+    text-decoration: none;
+    font-family: "PlayfairDisplay";
+    color: black;
+    margin-left: 15px;
+}
+
+
+/* @media screen (max-width: 768px) 
+{
+    .content {
+        
+    }
+} */
+
+@media screen and (max-width: 576px) 
+{
+    .content {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
+
+    .burger {
+        justify-content: flex-start;
+    }
+
+    .navbar {
+        width: 100%;
+        flex-direction: column;
+        overflow-y: hidden;
+        visibility: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: .25s;
+        padding: 0; 
+        margin: 0;
+    }
+
+    .navbar.active {
+        visibility: visible;
+        opacity: 1;
+        max-height: 90%;
+    }
+
+    .navbar li {
+        width: 100%;
+        text-align: center;
+    }
+
+    form {
+        width: 60%;
+    }
+    .emailInput {
+        font-size: 0.7rem;
+    }
+
+    footer {
+     text-align: center;
+    }
+}

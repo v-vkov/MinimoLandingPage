@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Minimo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    <link href="" rel="stylesheet">
+
+</head>
+<body>
+    <header class="d-flex justify-content-between">
+        <div class="logo">
+          <p>Minimø</p> 
+        </div>
+        <nav>
+            <ul class="navbar d-flex">
+                <li><a href="">lifestyle</a></li>
+                <li><a href="">Photodiary</a></li>
+                <li><a href="">Music</a></li>
+                <li><a href="">Travel</a></li>
+            </ul>
+        </nav>
+        <div class="burger">
+            <span></span>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            jQuery(document).ready(function($) {
+                $('.burger').click(function(){
+                    $('.navbar').toggleClass('active');
+                });
+            });
+        </script>
+             
+    </header>
+    
+    <main>
+        <div class="container p-3">
+          <div class="firstPost d-flex">
+            <img src="img/image.jpg" alt="mainImage">
+            <a class="textNav" href="">Photodiary</a>
+            <h2>The perfect weekend getaway</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, consectetur eveniet distinctio vitae consequuntur praesentium accusantium facilis nihil eos, voluptates quis fuga inventore eius odit beatae repudiandae neque fugiat placeat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium asperiores voluptatem consequuntur est nemo unde sit, quam, debitis adipisci ex ipsa rerum eum sapiente incidunt fuga maiores quia saepe. Nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, consequuntur recusandae aut commodi eaque saepe dolore soluta voluptate, magnam dolorem id voluptatibus reprehenderit sint deleniti, quae earum fugiat nulla maiores?</p>
+            <a class="textNav" href="">Leave a comment</a>
+          </div>
+        </div>
+
+        <div class="container d-flex p-3">
+            <div class="content p-3">
+                <img src="img/image1.jpg" alt="image1">
+                <a class="textNav" href="">Lifestyle</a>
+                <h2>More than just a music festival</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illum deleniti labore nesciunt dolorum ex debitis. Est, autem. Iusto natus vero laborum totam suscipit quidem temporibus. Modi fugiat quasi veniam!</p>
+            </div>
+            <div class="content p-3">
+                <img src="img/image2.jpg" alt="image2">
+                <a class="textNav" href="">Lifestyle</a>
+                <h2>Life tastes better with coffee</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illum deleniti labore nesciunt dolorum ex debitis. Est, autem. Iusto natus vero laborum totam suscipit quidem temporibus. Modi fugiat quasi veniam!</p>
+            </div>
+            <div class="content p-3">
+                <img src="img/image3.jpg" alt="image3">
+                <a class="textNav" href="">Photodiary</a>
+                <h2>American dream</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illum deleniti labore nesciunt dolorum ex debitis. Est, autem. Iusto natus vero laborum totam suscipit quidem temporibus. Modi fugiat quasi veniam!</p>
+            </div>
+            <div class="content p-3">
+                <img src="img/image4.jpg" alt="image4">
+                <a class="textNav" href="">Photodiary</a>
+                <h2>A day exploring the Alps</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ex debitis. Est, autem. Iusto natus vero laborum totam suscipit quidem temporibus. Modi fugiat quasi veniam!</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="signUp d-flex">
+                <h2>Sign up for our newsletter!</h2>
+                <form class="d-flex" action="">
+                    <input class="emailInput" type="email" name="Email" placeholder="Enter a valid email address">
+                    <button class="sendInput"><svg xmlns="http://www.w3.org/2000/svg" fill="#000" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="17" viewBox="0 0 32 17"><image id="send_icon" data-name="send icon" width="32" height="17" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAARCAYAAAC8XK78AAABRElEQVRIicWWPUvEQBCGn4ioVylargPeH9ArbDwt/Pw/2lvJ+YdsPbRRKxHvB4jCuKXiNX6BpwyMIFucMcnFhZBk2ew87LzzTjKRsAssA127VOM9NY7MQomEQ+ADeLFX4Bk4A05VY3+UONn3g0g4AC5V45FIaACrwCYwDTwAJ8CFanwfCUAKkczPOoxBTQC3nrKeavysDGAYRLJmAdgGWoAB9Fw/d6UB8kL8WDsGLDpQE3izVFnKVONjIYC/QiTfTQIrnrI54MnEbKJWja+5AcpAJHvMAOvAGmDiVtfPlWocDAXwDbpeklWNNrAD3AD7dZ3AhleQnYAZ3fGvJ1BSA20Pahrou4fk10CBKlgCtrwKzKjOC1dBTh9oesCWT11X4gP/6oRJL5jysqmnF4iEDjDwbjjv91q64bhI2APM2+v/HwC+AAIssK9JtSq/AAAAAElFTkSuQmCC"/></svg></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container d-flex p-3">
+            <div class="content p-3">
+                <img src="img/image5.jpg" alt="image5">
+                <a class="textNav" href="">Lifestyle</a>
+                <h2>More than just a music festival</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illum deleniti labore nesciunt dolorum ex debitis. Est, autem. Iusto natus vero laborum totam suscipit quidem temporibus. Modi fugiat quasi veniam!</p>
+            </div>
+            <div class="content p-3">
+                <img src="img/image6.jpg" alt="image6">
+                <a class="textNav" href="">Lifestyle</a>
+                <h2>Life tastes better with coffee</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illum deleniti labore nesciunt dolorum ex debitis. Est, autem. Iusto natus vero laborum totam suscipit quidem temporibus. Modi fugiat quasi veniam!</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="buttonSpace d-flex">
+                <a class="btn" href="">Load more</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="d-flex justify-content-between">
+      <div>
+        <ul class="d-flex footNav p-3">
+          <li><a href="">Terms and conditions</a></li>
+          <li><a href="">Privacy</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="d-flex footNav p-3">
+          <li><a href="">Follow</a></li>
+          <li><a href=""><img src="img/facebook.png" alt="facebookicon"></a></li>
+          <li><a href=""><img src="img/twitter.png" alt="twittericon"></a></li>
+          <li><a href=""><img src="img/instagram.png" alt="instaicon"></a></li>
+        </ul>
+      </div>
+    </footer>
+
+</body>
+</html>
